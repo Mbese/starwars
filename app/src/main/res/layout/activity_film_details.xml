@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:padding="8dp">
+
+    <TextView
+            android:id="@+id/episodeNum"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Episode Number: "/>
+
+    <TextView
+            android:id="@+id/episode_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+            android:id="@+id/filmTitle"
+            android:layout_below="@+id/episodeNum"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title:"/>
+
+    <TextView
+            android:id="@+id/film_title_text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/episodeNum"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/year"
+            android:layout_below="@+id/filmTitle"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year:"/>
+
+    <TextView
+            android:id="@+id/film_year_text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/film_title_text"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/director"
+            android:layout_below="@+id/year"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Director"/>
+
+    <TextView
+            android:id="@+id/film_director_text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/film_year_text"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/releaseDate"
+            android:layout_below="@id/director"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release Date: "/>
+
+    <TextView
+            android:id="@+id/release_date_text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/film_director_text"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/characters"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/release_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:text="Characters"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/characters_recycler_view"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/characters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
